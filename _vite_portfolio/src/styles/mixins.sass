@@ -1,0 +1,28 @@
+@use 'variables'
+
+@mixin btn
+    padding: .8rem 1rem
+    color: variables.$cor-texto-terciario
+    background: variables.$gradient
+    text-decoration: none
+    border-radius: 3rem
+
+@mixin centralizar
+    display: flex
+    justify-content: center
+    align-items: center
+
+@mixin linha
+    content: ''
+    background: variables.$gradient
+    height: 3px
+    width: 100%
+    
+@mixin barra($t)
+    height: 8px
+    width: $t
+    border-radius: variables.$borda-card
+    background: variables.$gradient
+    
+
+    

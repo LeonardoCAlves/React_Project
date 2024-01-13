@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #101010;
+}
+
+.titulo {
+  color: #f4f4f4;
+  font-size: 3rem;
+  animation: flip 1s;
+}
+
+
+@keyframes flip {
+  from{
+    transform: rotateX(90deg);
+  }
+  to {
+    transform: rotateX(0deg);
+  }
+}
+
+.entrada {
+  display: flex;
+  margin: 30px;
+}
+
+#inputcep {
+  text-align: center;
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 2px;
+  border: 0;
+  border-radius: 20px;
+  outline: none;
+  margin-right: 2px;
+  background: #bdfbfd;
+ 
+}
+
+/* #inputcep:focus {
+  opacity: 1;
+  border: 0;
+  font-weight: 600;
+  font-size: 1.2rem;
+  transition: 0.4s;
+} */
+
+#btnprocurar {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  /* transition: transform 0.5s; */
+}
+/* 
+#btnprocurar:hover{
+  transform: scale(1.2);
+} */
+
+.saida {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  font-size: 1.5rem;
+}
+
+.saida h2 {
+  margin-bottom: 10px;
+}
+
+.saida span {
+  margin-bottom: 5px;
+}
+

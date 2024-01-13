@@ -1,0 +1,46 @@
+@use '../variables'
+@use '../mixins'
+
+#contato
+    @include mixins.centralizar
+    flex-direction: column
+    background: variables.$cor-bg-card
+    padding: 1rem
+    color: variables.$cor-texto-secundario
+    border-radius: variables.$borda-card
+    margin-bottom: 2rem
+    text-align: left
+    width: 80% 
+
+    .card
+        @include mixins.centralizar
+        justify-content: start
+        gap: .5rem
+        padding-bottom: .8rem
+        margin-bottom: .8rem
+        border-bottom: 1px solid #444
+        width: 100%
+
+    .h3
+        color: variables.$cor-texto-secundario
+        font-style: .8rem
+        margin-bottom: .5rem
+
+    p
+        color: variables.$cor-texto-principal
+
+    svg
+        background: variables.$cor-bg-body
+        padding: .4rem
+        width: 2rem
+        height: 2rem
+        border-radius: variables.$borda-card
+
+    #celular
+        color: #60f258
+    
+    #email
+        color: #6ab5b9
+
+    #pin
+        color: #c17ceb

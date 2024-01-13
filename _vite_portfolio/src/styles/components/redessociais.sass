@@ -1,0 +1,32 @@
+@use '../variables'
+@use '../mixins'
+
+#redes-sociais
+    @include mixins.centralizar
+    gap: 1rem
+    margin: 1rem 0
+
+    .social-btn
+        padding: .6rem
+        background: variables.$cor-bg-card
+        border-radius: variables.$borda-card
+        color: #333
+        font-size: 1.3rem
+        @include mixins.centralizar
+
+    #linkedin
+        color:#0072b1
+    
+    #github
+        color: #111
+
+    #instagram
+        color: #bc2a8d
+
+    #youtubeprog, #youtubeartes
+        color: #d71818
+        
+    :hover
+        background: variables.$gradient
+        > svg
+            color: variables.$cor-texto-terciario

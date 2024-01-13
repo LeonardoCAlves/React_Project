@@ -1,0 +1,118 @@
+@use '../variables'
+@use '../mixins'
+
+.tecnologias 
+    margin-bottom: 1rem
+
+    .tec-grid
+        display: flex
+        flex-wrap: wrap
+        gap: 1.5rem
+
+        .tec-card
+            @include mixins.centralizar
+            gap: 1rem
+            padding: 1rem
+            border: 1px solid #333
+            width: 48%
+            border-radius: variables.$borda-card
+
+            .h3
+                color: variables.$cor-texto-secundario
+                margin-bottom: 1rem
+            
+            svg
+                font-size: 5rem
+        
+        .tec-info
+            h3
+                color: variables.$cor-texto-principal
+                margin: .6rem 0              
+
+        #html
+            svg
+                color: #e44d26
+        
+        #html
+            .tec-info
+                .progress-bar
+                    @include mixins.barra($t: 100%)
+                    
+        #css
+            svg
+                color: #1572b6
+
+        #css
+            .tec-info
+                .progress-bar
+                    @include mixins.barra($t: 100%)
+
+        #js
+            svg
+                color: #f0db4f
+
+        #js
+            .tec-info
+                .progress-bar
+                    @include mixins.barra($t: 80%)
+
+        #node
+            svg
+                color: #83cd29
+        
+        #node
+            .tec-info
+                .progress-bar
+                    @include mixins.barra($t: 40%)
+
+        #mysql
+            svg
+                color: #00618a
+
+        #mysql
+            .tec-info
+                .progress-bar
+                    @include mixins.barra($t: 80%)
+
+        #react
+            svg
+                color: #61dafb
+
+        #react
+            .tec-info
+                .progress-bar
+                    @include mixins.barra($t: 50%)
+
+        #py
+            svg
+                color: #F2D251
+        
+        #py
+            .tec-info
+                .progress-bar
+                    @include mixins.barra($t: 100%)
+
+        #java
+            svg
+                color: #EC2025
+
+        #java
+            .tec-info
+                .progress-bar
+                    @include mixins.barra($t: 50%)
+
+        #sass
+            svg
+                color: #C26191
+        #sass
+            .tec-info
+                .progress-bar
+                    @include mixins.barra($t: 25%)
+        
+        #angular
+            svg
+                color: #B9002D
+        #angular
+            .tec-info
+                .progress-bar
+                    @include mixins.barra($t: 60%)
